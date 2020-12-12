@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>document</title>
+</head>
+
+<body>
+    <script>
+        async function fn() {
+            return 1
+        }
+        let result = fn()
+        console.log(result);
+
+        async function fn3() {
+            return 5
+        }
+        async function fn2() {
+            let aaa = await fn3()
+            return 6
+        }
+        console.log(fn2());
+    </script>
+</body>
+
+</html>
